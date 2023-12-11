@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        animation-name: test;
+        animation-duration: 9s;
+        position: absolute;
+    }
+    @keyframes test {
+        0%{
+            background-color: orange;
+            border-radius: 75%;
+            top: 0;
+            left: 0;
+
+        }
+        20%{
+            background-color: black;
+            border-radius: 35%;
+            top: 0;
+            left: 90%;
+        }
+        40%{
+            background-color: blue;
+            border-radius: 24%;
+            top: 80vh;
+            left: 80vh;
+        }
+        60%{
+            background-color: indigo;
+            border-radius: 100%;
+            top: 80vh;
+            left: 45%;
+        }
+        80%{
+            background-color: crimson;
+            border-radius: 65%;
+            top: 75vh;
+            left: 0;
+        }
+        100%{
+            background-color:yellow;
+            border-radius: 75%;
+            top: 0;
+            left: 0;
+        }
+    }
+    /* #div1{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        transition: width 2s, height 2s, transform 2s;
+    } */
+    /* #div1:hover{ */
+        /* width: 400px;
+        height: 400px; */
+        /* transform: translate(); */
+        /* transform: rotate(80deg); */
+        /* transform: translate(100px, 200px); */
+        /* transform: scale(6, 2); */
+        /* transform: skew(60deg); */
+    }
+</style>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
